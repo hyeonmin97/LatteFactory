@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/edit_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#94c995">
+
+            <ImageButton
+                android:id="@+id/backPresss"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:background="@android:color/transparent"
+                android:src="@drawable/timer_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="내 정보 수정"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#94c995">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_change_bike"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="아이디"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/edit_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="lala"
+                android:textColor="#94C995"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="이름"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="lala"
+                android:textColor="#FF94C995"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#DC3A1F"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/user_pass"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_rounded_corner"
+                android:hint=" 변경할 비밀번호 입력"
+                android:layout_marginLeft="30dp"
+                android:lines="1"
+                android:padding="5dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text=" 이메일"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#DC3A1F"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/user_email"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint=" 이메일을 입력" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="전화번호"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#DC3A1F"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/user_phone"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/edittext_rounded_corner"
+                android:hint=" 010-0000-0000"
+                android:lines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="비상연락처1"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#DC3A1F"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/user_emer1"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint=" 비상 연락처 입력"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="비상연락처2"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/user_emer2"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint=" 비상 연락처2 입력"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="비상연락처3"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/user_emer3"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint=" 비상 연락처3 입력"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="지병"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/user_disease"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint=" 지병을 입력" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="복용 약"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/user_medicine"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint=" 복용중인 약 입력" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_check"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="비어있는 항목이 있어요! 모두 입력해주세요."
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/user_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_button"
+                android:drawableLeft="@drawable/user_exit"
+                android:text="수정완료"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/user_quit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button"
+                android:paddingLeft="35dp"
+                android:text="탈퇴하기"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

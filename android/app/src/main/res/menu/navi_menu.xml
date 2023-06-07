@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/update"
+                    android:icon="@drawable/member"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:title="회원정보 수정"
+                    />
+                <item
+                    android:id="@+id/timeSet"
+                    android:icon="@drawable/timer"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:title="타이머 설정"
+                    />
+                <item
+                    android:id="@+id/bluetooth"
+                    android:icon="@drawable/bluetooth"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:title="블루투스 연결"
+                    />
+        </group>
+</menu>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LatteFactory</string>
+    <string name="btn1">전방1</string>
+    <string name="btn2">후방1</string>
+    <string name="btn3">전방2</string>
+    <string name="btn4">후방2</string>
+    <string name="btn5">전방3</string>
+    <string name="btn6">후방3</string>
+    <string name="btn7">전방4</string>
+    <string name="btn8">후방4</string>
+    <string name="btn9">전방5</string>
+    <string name="btn10">후방5</string>
+    <string name="btn11">전방6</string>
+    <string name="btn12">후방6</string>
+    <string name="btn13">전방7</string>
+    <string name="btn14">후방7</string>
+    <string name="btn15">전방8</string>
+    <string name="btn16">후방8</string>
+    <string name="teamName">LatteFactory</string>
+    <string name="latte">라떼판다</string>
+    <string name="raspberry">라즈베리 파이</string>
+</resources>

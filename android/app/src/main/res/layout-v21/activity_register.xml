@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/bike" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/iid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:text="아이디"/>
+
+            <EditText
+                android:id="@+id/id1"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="25dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="아이디 입력" />
+
+            <Button
+                android:id="@+id/idR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button"
+                android:textColor="@android:color/white"
+                android:padding="0dp"
+                android:text="중복확인"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:text="비밀번호"/>
+
+            <EditText
+                android:id="@+id/pass1"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="50dp"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="비밀번호 입력" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/passc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:text="비밀번호 확인"/>
+            <EditText
+                android:id="@+id/pass2"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="비밀번호 확인"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:text="이름"/>
+
+            <EditText
+                android:id="@+id/name1"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="90dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="이름 입력" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:text="휴대전화"/>
+
+            <EditText
+                android:id="@+id/phone1"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="50dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="전화번호 입력"
+                android:inputType="phone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:text="이메일"/>
+            <EditText
+                android:id="@+id/email1"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="70dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="이메일 주소 입력" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/ECon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:text="비상연락처"/>
+            <EditText
+                android:id="@+id/emCall1"
+                android:background="@drawable/edittext_rounded_corner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:padding="5dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="필수 비상연락처 입력"
+                android:inputType="phone"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="bt_Join"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#94c995"
+            android:background="@drawable/shape_button"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="가입"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "435558779120",
+    "project_id": "lattefactory-9d2d0",
+    "storage_bucket": "lattefactory-9d2d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435558779120:android:1d278492ec3a8c4c075a35",
+        "android_client_info": {
+          "package_name": "kr.ac.dongyang.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435558779120-brb4ru8s3bpud795e8c3oqcg6kum8bis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.ac.dongyang.project",
+            "certificate_hash": "c29b47b6781ae832823f0d5fa0b52c6667f82797"
+          }
+        },
+        {
+          "client_id": "435558779120-n5hvfmud9liamhcmnqfqa2n7d32t96t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx7_qQLn1b0nXnm1u7vZB-xemnG6JpnFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435558779120-n5hvfmud9liamhcmnqfqa2n7d32t96t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
